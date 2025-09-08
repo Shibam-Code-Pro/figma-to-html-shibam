@@ -4,6 +4,10 @@ A beautiful, responsive travel agency landing page built from Figma design to pi
 
 ![Jadoo Travel Website](images/Travel_Agency_Landing_Page_UI.png)
 
+## 🚀 Live Demo
+
+[View Live Figma To HTML Conversion Page](https://Shibam-Code-Pro.github.io/figma-to-html-shibam)
+
 ## 🚀 Features
 
 - **Pixel-Perfect Design** - Exact replication of Figma design
@@ -170,3 +174,15 @@ This project demonstrates:
 ---
 
 **Made with ❤️ for learning web development**
+
+---
+
+## 📞 Contact
+
+- **Email**: Connect-With-Shibam@outlook.com
+- **LinkedIn**: [linkedin.com/in/shibam-webdev](https://linkedin.com/in/shibam-webdev)
+- **GitHub**: [github.com/Shibam-Code-Pro](https://github.com/Shibam-Code-Pro)
+
+---
+
+⭐ If you found this project helpful, please give it a star on GitHub!

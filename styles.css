@@ -1,0 +1,660 @@
+/* My Travel Website CSS - Jadoo */
+
+/* Colors I'm using for my website */
+:root {
+    --orange-color: #F1A501;     /* Main orange color */
+    --dark-blue: #181E4B;        /* Dark blue for text */
+    --gray-text: #5E6282;        /* Gray for descriptions */
+    --cream-bg: #FFF1DA;         /* Cream background */
+    --white: #FFFFFF;            /* White color */
+    --light-gray: #F7F7F7;       /* Light gray */
+}
+
+/* Reset all margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic page setup */
+html, body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--cream-bg);
+    background-image: url('images/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--gray-text);
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Top Navigation Bar */
+.navbar {
+    background-color: var(--cream-bg);
+    padding: 20px 0;
+    position: fixed;              /* Stays at top when scrolling */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;               /* Shows above other content */
+    backdrop-filter: blur(10px);  /* Blurry background effect */
+}
+
+/* Logo size */
+.navbar-brand img {
+    height: 34px;
+}
+
+/* Navigation menu links */
+.navbar-nav .nav-link {
+    color: var(--dark-blue);
+    font-weight: 500;
+    font-size: 17px;
+    margin: 0 15px;
+    transition: color 0.3s ease;  /* Smooth color change on hover */
+}
+
+/* Center the navigation menu */
+.navbar-nav.mx-auto {
+    margin-left: 200px !important;
+    margin-right: auto !important;
+}
+
+/* Change color when hovering over menu items */
+.navbar-nav .nav-link:hover {
+    color: var(--orange-color);
+}
+
+/* Login link styling */
+.login-link {
+    color: var(--dark-blue) !important;
+    font-weight: 500;
+    margin-right: 20px;
+}
+
+/* Sign up button styling */
+.signup-btn {
+    border: 1px solid var(--dark-blue);
+    color: var(--dark-blue);
+    padding: 8px 22px;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.3s ease;    /* Smooth animation */
+}
+
+/* Sign up button when hovering */
+.signup-btn:hover {
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+/* Language selector button */
+.language-btn {
+    background: transparent;
+    border: none;
+    color: var(--dark-blue);
+    font-weight: 500;
+}
+
+/* Main Hero Section (the big area with text and image) */
+.hero-section {
+    position: relative;
+    height: 100vh;               /* Full screen height */
+    padding: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Left side content area */
+.hero-content {
+    padding-right: 20px;
+    padding-top: 120px;          /* Space from top for navbar */
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Small orange text at top */
+.hero-subtitle {
+    color: var(--orange-color);
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;    /* Makes text ALL CAPS */
+    letter-spacing: 2px;         /* Space between letters */
+    margin-bottom: 20px;
+    animation: gentleGlow 3s ease-in-out infinite; /* Glowing effect */
+}
+
+/* Big main title */
+.hero-title {
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 1.05;           /* How close lines are together */
+    color: var(--dark-blue);
+    margin-bottom: 25px;
+    font-family: 'Volkhov', serif; /* Different font for title */
+    text-align: left;
+    letter-spacing: -1px;        /* Letters slightly closer */
+    animation: subtlePulse 4s ease-in-out infinite; /* Pulsing effect */
+}
+
+/* Hide mobile title on desktop */
+.mobile-title {
+    display: none;
+}
+
+/* Show desktop title on desktop */
+.desktop-title {
+    display: inline;
+}
+
+/* The word "enjoy" with underline */
+.underline-text {
+    position: relative;
+    display: inline-block;
+}
+
+/* Creates the orange underline under "enjoy" */
+.underline-text::after {
+    content: '';                 /* Empty content for decoration */
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #FF946D 0%, #FF7D68 100%); /* Orange gradient */
+    border-radius: 2px;
+    animation: gentleGlow 2.5s ease-in-out infinite; /* Glowing animation */
+}
+
+/* Description text below title */
+.hero-description {
+    font-size: 15px;
+    line-height: 26px;           /* Space between lines */
+    color: var(--gray-text);
+    margin-bottom: 28px;
+    font-weight: 500;
+}
+
+/* Container for both buttons */
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 44px;                   /* Space between buttons */
+}
+
+/* Orange "Find out more" button */
+.find-more-btn {
+    background-color: var(--orange-color);
+    border: none;
+    color: var(--white);
+    padding: 18px 26px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;       /* Remove underline */
+    transition: all 0.3s ease;   /* Smooth animations */
+    box-shadow: 0 20px 35px rgba(241, 165, 1, 0.15); /* Drop shadow */
+    animation: buttonShimmer 2.5s ease-in-out infinite; /* Shimmer effect */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Creates the light sweep effect on button */
+.find-more-btn::before {
+    content: '';                 /* Empty content for effect */
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    animation: shimmerMove 2.5s ease-in-out infinite; /* Moving light effect */
+}
+
+/* Button when hovering */
+.find-more-btn:hover {
+    background-color: #e09501;   /* Darker orange */
+    transform: translateY(-2px); /* Moves up slightly */
+    box-shadow: 0 25px 40px rgba(241, 165, 1, 0.25); /* Bigger shadow */
+    color: var(--white);
+}
+
+/* "Play Demo" button with play icon */
+.play-demo-btn {
+    color: var(--gray-text);
+    text-decoration: none;       /* Remove underline */
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 15px;                   /* Space between icon and text */
+    transition: color 0.3s ease; /* Smooth color change */
+    animation: playButtonPulse 2s ease-in-out infinite; /* Pulsing effect */
+}
+
+/* Play button when hovering */
+.play-demo-btn:hover {
+    color: var(--dark-blue);
+}
+
+/* The play icon */
+.play-demo-btn i {
+    font-size: 52px;
+    color: #DF6951;              /* Red-orange color */
+}
+
+/* Right side image area */
+.hero-image {
+    position: relative;
+    text-align: center;
+}
+
+/* Main girl image */
+.traveler-img {
+    max-width: 85%;
+    height: auto;
+    position: relative;
+    z-index: 2;                  /* Shows above background decorations */
+}
+
+/* Flying airplane decorations */
+.airplane {
+    position: absolute;
+    color: #4285F4;              /* Blue color */
+    font-size: 20px;
+    animation: float 6s ease-in-out infinite; /* Floating animation */
+}
+
+/* First airplane position */
+.airplane-1 {
+    top: 15%;
+    right: 20%;
+    animation-delay: 0s;         /* Starts immediately */
+}
+
+/* Second airplane position */
+.airplane-2 {
+    top: 45%;
+    left: 10%;
+    animation-delay: 2s;         /* Starts after 2 seconds */
+    transform: rotate(45deg);    /* Rotated 45 degrees */
+}
+
+/* Third airplane position */
+.airplane-3 {
+    bottom: 25%;
+    right: 15%;
+    animation-delay: 4s;         /* Starts after 4 seconds */
+    transform: rotate(-30deg);   /* Rotated -30 degrees */
+}
+
+/* Animation for floating airplanes */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);    /* Starting position */
+    }
+    50% {
+        transform: translateY(-20px) rotate(5deg);  /* Moves up and rotates slightly */
+    }
+}
+
+/* Background circle decorations */
+.bg-decoration {
+    position: absolute;
+    background: linear-gradient(135deg, rgba(241, 165, 1, 0.1), rgba(223, 105, 81, 0.1)); /* Orange gradient */
+    border-radius: 50%;          /* Makes it a circle */
+    z-index: -1;                 /* Shows behind everything */
+}
+
+/* Large background circle (top right) */
+.bg-decoration-1 {
+    width: 700px;
+    height: 700px;
+    top: -200px;
+    right: -350px;
+    opacity: 0.3;                /* Semi-transparent */
+}
+
+/* Small background circle (bottom left) */
+.bg-decoration-2 {
+    width: 400px;
+    height: 400px;
+    bottom: -100px;
+    left: -200px;
+    opacity: 0.2;                /* More transparent */
+}
+
+/* Tablet styles (screens smaller than 992px) */
+@media (max-width: 991.98px) {
+    /* Make title smaller on tablets */
+    .hero-title {
+        font-size: 48px;
+        line-height: 1.1;
+        animation: subtlePulse 4s ease-in-out infinite;
+    }
+    
+    /* Adjust content spacing for tablets */
+    .hero-content {
+        padding-right: 0;
+        padding-top: 100px;          /* Space for fixed navbar */
+        text-align: left;
+        margin-bottom: 40px;
+    }
+    
+    /* Stack buttons on smaller screens */
+    .hero-buttons {
+        justify-content: flex-start;
+        flex-wrap: wrap;             /* Buttons can wrap to next line */
+        gap: 20px;
+    }
+    
+    /* Mobile menu full screen */
+    .navbar-collapse {
+        text-align: center;
+        background-color: var(--cream-bg);
+        padding: 20px 0;
+        border-radius: 0;
+        margin-top: 0;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Drop shadow */
+        position: fixed;
+        top: 80px;                   /* Below navbar */
+        left: 0;
+        right: 0;
+        width: 100vw;                /* Full screen width */
+        min-height: calc(100vh - 80px); /* Full screen height minus navbar */
+        z-index: 999;
+    }
+    
+    /* Stack menu items vertically */
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    /* Style each menu link */
+    .navbar-nav .nav-link {
+        margin: 15px 0;
+        padding: 15px 20px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        display: block;
+        width: 100%;
+        font-size: 18px;
+    }
+    
+    /* Menu link hover effect */
+    .navbar-nav .nav-link:hover {
+        background-color: rgba(241, 165, 1, 0.1); /* Light orange background */
+    }
+    
+    /* Center menu items */
+    .navbar-nav.mx-auto {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    
+    /* Login link in mobile menu */
+    .login-link {
+        color: var(--dark-blue) !important;
+        font-weight: 500;
+        margin: 10px 0 !important;
+        padding: 15px 20px !important;
+        display: block !important;
+        width: 100% !important;
+        font-size: 18px !important;
+    }
+    
+    /* Sign up button in mobile menu */
+    .signup-btn {
+        border: 1px solid var(--dark-blue) !important;
+        color: var(--dark-blue) !important;
+        padding: 15px 20px !important;
+        border-radius: 5px !important;
+        font-weight: 500 !important;
+        margin: 10px 0 !important;
+        display: block !important;
+        width: 200px !important;
+        text-align: center !important;
+        font-size: 18px !important;
+    }
+    
+    /* Language button in mobile menu */
+    .language-btn {
+        background: transparent !important;
+        border: none !important;     /* No border */
+        color: var(--dark-blue) !important;
+        font-weight: 500 !important;
+        padding: 15px 20px !important;
+        border-radius: 5px !important;
+        margin: 10px 0 !important;
+        display: block !important;
+        width: 100px !important;
+        text-align: center !important;
+        font-size: 18px !important;
+    }
+    
+    /* Smaller subtitle on tablets */
+    .hero-subtitle {
+        font-size: 16px;
+        animation: gentleGlow 3s ease-in-out infinite;
+    }
+}
+
+/* Medium mobile styles (screens smaller than 768px) */
+@media (max-width: 767.98px) {
+    /* Even smaller title */
+    .hero-title {
+        font-size: 36px;
+        line-height: 1.1;
+        animation: subtlePulse 4s ease-in-out infinite;
+    }
+    
+    /* Smaller subtitle */
+    .hero-subtitle {
+        font-size: 14px;
+        animation: gentleGlow 3s ease-in-out infinite;
+    }
+    
+    /* Smaller description text */
+    .hero-description {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+    /* Content spacing */
+    .hero-content {
+        padding-top: 100px;
+        text-align: left;
+    }
+    
+    /* Smaller button */
+    .find-more-btn {
+        padding: 15px 20px;
+        font-size: 16px;
+        animation: buttonShimmer 2.5s ease-in-out infinite;
+    }
+    
+    /* Smaller play button */
+    .play-demo-btn {
+        font-size: 15px;
+        animation: playButtonPulse 2s ease-in-out infinite;
+    }
+    
+    /* Smaller play icon */
+    .play-demo-btn i {
+        font-size: 40px;
+    }
+    
+    /* Bigger image on medium mobile */
+    .traveler-img {
+        max-width: 90%;
+    }
+}
+
+/* Small mobile styles (screens smaller than 576px) */
+@media (max-width: 575.98px) {
+    /* Auto height for small screens */
+    .hero-section {
+        height: auto;
+        min-height: 100vh;           /* At least full screen */
+        padding: 20px 0;
+    }
+    
+    /* Center content on small mobile */
+    .hero-content {
+        padding-top: 100px;
+        text-align: center;
+    }
+    
+    /* Title styling for small mobile */
+    .hero-title {
+        font-size: 36px;
+        line-height: 1.2;
+        animation: subtlePulse 4s ease-in-out infinite;
+        text-align: center;
+    }
+    
+    /* Hide desktop title on mobile */
+    .desktop-title {
+        display: none;
+    }
+    
+    /* Show mobile title with line breaks */
+    .mobile-title {
+        display: inline;
+    }
+    
+    /* Very small subtitle */
+    .hero-subtitle {
+        font-size: 12px;
+        margin-bottom: 15px;
+        animation: gentleGlow 3s ease-in-out infinite;
+    }
+    
+    /* Small description but left aligned */
+    .hero-description {
+        font-size: 13px;
+        line-height: 22px;
+        margin-bottom: 20px;
+        text-align: left;            /* Keep description left aligned */
+    }
+    
+    /* Horizontal buttons on mobile */
+    .hero-buttons {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;             /* Wrap if needed */
+    }
+    
+    /* Small button */
+    .find-more-btn {
+        padding: 12px 18px;
+        font-size: 14px;
+        animation: buttonShimmer 2.5s ease-in-out infinite;
+    }
+    
+    /* Small play button */
+    .play-demo-btn {
+        font-size: 14px;
+        animation: playButtonPulse 2s ease-in-out infinite;
+    }
+    
+    /* Small play icon */
+    .play-demo-btn i {
+        font-size: 35px;
+    }
+    
+    /* Almost full width image */
+    .traveler-img {
+        max-width: 95%;
+    }
+    
+    /* Smaller background decorations */
+    .bg-decoration-1 {
+        width: 250px;
+        height: 250px;
+        top: -125px;
+        right: -125px;
+    }
+    
+    .bg-decoration-2 {
+        width: 150px;
+        height: 150px;
+        bottom: -75px;
+        left: -75px;
+    }
+    
+    /* Smaller airplanes */
+    .airplane {
+        font-size: 16px;
+    }
+}
+
+/* All my animations */
+
+/* Glowing effect for subtitle */
+@keyframes gentleGlow {
+    0%, 100% {
+        text-shadow: 0 0 10px rgba(241, 165, 1, 0.5); /* Light glow */
+        transform: scale(1);         /* Normal size */
+    }
+    50% {
+        text-shadow: 0 0 25px rgba(241, 165, 1, 0.8); /* Brighter glow */
+        transform: scale(1.05);      /* Slightly bigger */
+    }
+}
+
+/* Pulsing effect for title */
+@keyframes subtlePulse {
+    0%, 100% {
+        opacity: 1;                  /* Fully visible */
+        transform: scale(1);         /* Normal size */
+    }
+    50% {
+        opacity: 0.8;                /* Slightly faded */
+        transform: scale(1.03);      /* Slightly bigger */
+    }
+}
+
+/* Pulsing effect for play button */
+@keyframes playButtonPulse {
+    0%, 100% {
+        transform: scale(1);         /* Normal size */
+        opacity: 1;                  /* Fully visible */
+    }
+    50% {
+        transform: scale(1.1);       /* Bigger */
+        opacity: 0.9;                /* Slightly faded */
+    }
+}
+
+/* Shimmer effect for main button */
+@keyframes buttonShimmer {
+    0%, 100% {
+        transform: scale(1);         /* Normal size */
+    }
+    50% {
+        transform: scale(1.03);      /* Slightly bigger */
+    }
+}
+
+/* Moving light effect inside button */
+@keyframes shimmerMove {
+    0% {
+        left: -100%;                 /* Start off screen left */
+    }
+    50% {
+        left: 100%;                  /* Move to right side */
+    }
+    100% {
+        left: 100%;                  /* Stay on right */
+    }
+}

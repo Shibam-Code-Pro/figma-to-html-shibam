@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic page setup -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadoo - Travel Agency</title>
+    
+    <!-- Bootstrap CSS for layout and components -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts for Poppins and Volkhov -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Volkhov:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- My custom styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.svg" alt="Jadoo" height="40">
+            </a>
+            
+            <!-- Mobile menu button (hamburger) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navigation menu (collapses on mobile) -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Main navigation links -->
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Flights</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Bookings</a>
+                    </li>
+                </ul>
+                
+                <!-- Right side buttons -->
+                <div class="navbar-nav">
+                    <!-- Login link -->
+                    <a class="nav-link login-link" href="#">Login</a>
+                    
+                    <!-- Sign up button -->
+                    <a class="btn btn-outline-dark signup-btn" href="#">Sign up</a>
+                    
+                    <!-- Language selector dropdown -->
+                    <div class="dropdown ms-3">
+                        <button class="btn dropdown-toggle language-btn" type="button" data-bs-toggle="dropdown">
+                            EN
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">EN</a></li>
+                            <li><a class="dropdown-item" href="#">ES</a></li>
+                            <li><a class="dropdown-item" href="#">FR</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Hero Section (big area with text and image) -->
+    <section class="hero-section">
+        <div class="container">
+            <!-- Row with two columns -->
+            <div class="row align-items-center h-100">
+                <!-- Left column - Text content -->
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <!-- Small orange subtitle -->
+                        <p class="hero-subtitle">BEST DESTINATIONS AROUND THE WORLD</p>
+                        
+                        <!-- Big main title -->
+                        <h1 class="hero-title">
+                            <!-- Desktop version (one line) -->
+                            <span class="desktop-title">Travel, <span class="underline-text">enjoy</span> and live a new and full life</span>
+                            <!-- Mobile version (with line breaks) -->
+                            <span class="mobile-title">Travel, <span class="underline-text">enjoy</span><br>and live a new<br>and full life</span>
+                        </h1>
+                        
+                        <!-- Description paragraph -->
+                        <p class="hero-description">
+                            Built Wicket longer admire do barton vanity itself do in it.<br>
+                            Preferred to sportsmen it engrossed listening. Park gate<br>
+                            sell they west hard for the.
+                        </p>
+                        
+                        <!-- Two buttons -->
+                        <div class="hero-buttons">
+                            <!-- Orange "Find out more" button -->
+                            <a href="#" class="btn btn-primary find-more-btn">Find out more</a>
+                            
+                            <!-- "Play Demo" button with icon -->
+                            <a href="#" class="btn btn-link play-demo-btn">
+                                <i class="fas fa-play-circle"></i>
+                                Play Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right column - Image -->
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <!-- Main girl image -->
+                        <img src="images/girl.png" alt="Traveler" class="img-fluid traveler-img">
+                        
+                        <!-- Flying airplane decorations -->
+                        <div class="airplane airplane-1">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <div class="airplane airplane-2">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <div class="airplane airplane-3">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Background circle decorations -->
+        <div class="bg-decoration bg-decoration-1"></div>
+        <div class="bg-decoration bg-decoration-2"></div>
+    </section>
+
+    <!-- Bootstrap JavaScript for mobile menu and dropdowns -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

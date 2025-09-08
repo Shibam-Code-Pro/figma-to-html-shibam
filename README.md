@@ -6,7 +6,7 @@ A beautiful, responsive travel agency landing page built from Figma design to pi
 
 ## 🚀 Live Demo
 
-[View Live Figma To HTML Conversion Page](https://Shibam-Code-Pro.github.io/figma-to-html-shibam)
+[View Live Figma To HTML Conversion Page](https://figma-to-html-shibam.netlify.app)
 
 ## 🚀 Features
 

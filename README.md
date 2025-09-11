@@ -1,8 +1,19 @@
-# Jadoo Travel Website 🌍✈️
+# 🌍 Jadoo Travel Website - Figma to HTML
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
+![Responsive](https://img.shields.io/badge/Responsive-4CAF50?style=for-the-badge&logo=responsive&logoColor=white)
 
 A beautiful, responsive travel agency landing page built from Figma design to pixel-perfect HTML, CSS, and Bootstrap.
 
-![Jadoo Travel Website](images/Travel_Agency_Landing_Page_UI.png)
+## 📸 Screenshots
+
+<div align="center">
+  <img src="screenshot/figma-to-html-shibam.png" alt="Jadoo Travel Website Screenshot" width="800">
+  <p><em>Pixel-perfect Figma to HTML conversion of Jadoo travel website with modern animations</em></p>
+</div>
 
 ## 🚀 Features
 
@@ -39,16 +50,28 @@ A beautiful, responsive travel agency landing page built from Figma design to pi
 
 ```
 figma-to-html-shibam/
-├── index.html                                 # Main HTML file with beginner-friendly comments
-├── styles.css                                 # Custom CSS styles with animations
-├── images/                                    # Image assets folder
+├── 📄 index.html                                 # Main HTML file with beginner-friendly comments
+├── 🎨 styles.css                                 # Custom CSS styles with animations
+├── 🖼️ images/                                    # Image assets folder
 │   ├── logo.svg                               # Jadoo company logo
-│   ├── girl.png                               # Hero section traveler image
-│   └── Travel_Agency_Landing_Page_UI.png      # Original Figma design reference
-├── README.md                                  # Complete project documentation
-├── LICENSE                                    # MIT License for open source
-└── .gitignore                                 # Git ignore file for version control
+│   └── girl.png                               # Hero section traveler image
+├── 📸 screenshot/                              # Project screenshots
+│   └── figma-to-html-shibam.png
+├── 📖 README.md                                  # Complete project documentation
+├── 📜 LICENSE                                    # MIT License for open source
+└── 🚫 .gitignore                                 # Git ignore file for version control
 ```
+
+## 🛠️ Technologies Used
+
+<table>
+<tr>
+<td align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" width="40" height="40"/><br><b>HTML5</b></td>
+<td align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" width="40" height="40"/><br><b>CSS3</b></td>
+<td align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg" width="40" height="40"/><br><b>Bootstrap</b></td>
+<td align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg" width="40" height="40"/><br><b>Figma</b></td>
+</tr>
+</table>
 
 ## 📝 Commit History
 

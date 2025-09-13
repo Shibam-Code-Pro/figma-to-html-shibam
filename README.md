@@ -17,7 +17,7 @@ A beautiful, responsive travel agency landing page built from Figma design to pi
 
 ## 🚀 Live Demo
 
-[View Live Figma To HTML Conversion Page](https://figma-to-html-shibam.netlify.app)
+[View Live Jadoo Travel Website](https://figma-to-html-shibam.vercel.app)
 
 ## 🚀 Features
 
